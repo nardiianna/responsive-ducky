@@ -17,6 +17,7 @@ npm start
 ```
 
 Si apre `http://localhost:4747`. Scrivi l'URL, scegli il dispositivo e il browser e naviga nella finestra del Simulator o dell'emulatore.
+Con Xcode 27 o successivi l'app Simulator si chiama **DeviceHub**: Responsive Ducky apre quella in automatico.
 Funzionano anche i siti in locale (`http://localhost:3000`): il Simulator condivide la rete del Mac.
 
 ## Requisiti
