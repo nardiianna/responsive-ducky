@@ -1,0 +1,13 @@
+{
+  "name": "responsive-ducky",
+  "version": "0.1.0",
+  "description": "Dashboard locale per testare siti su iPhone, iPad, Android e Mac con browser reali (Simulator / Emulator).",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

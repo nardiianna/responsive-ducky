@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Ducky</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🦆 <strong>Responsive</strong> Ducky</div>
+    <form id="url-form" class="urlbar" autocomplete="off">
+      <input id="url" type="text" placeholder="www.miosito.it oppure http://localhost:3000" required>
+      <span class="hint">L'URL viene aperto sul dispositivo che scegli qui sotto</span>
+    </form>
+    <button id="refresh" class="ghost" title="Ricarica dispositivi">↻</button>
+  </header>
+
+  <div class="layout">
+    <nav class="sidebar" id="os-nav">
+      <button data-os="ios" class="active"><span class="ico">🍎</span> iOS / iPadOS</button>
+      <button data-os="android"><span class="ico">🤖</span> Android</button>
+      <button data-os="mac"><span class="ico">💻</span> Mac</button>
+    </nav>
+
+    <main class="content">
+      <section id="notice" class="notice" hidden></section>
+
+      <section id="filters" class="filters">
+        <div class="seg" id="kind-filter">
+          <button data-kind="all" class="active">Tutti</button>
+          <button data-kind="phone">Smartphone</button>
+          <button data-kind="tablet">Tablet</button>
+        </div>
+        <input id="search" type="search" placeholder="Cerca dispositivo…">
+      </section>
+
+      <section id="device-list" class="device-list"></section>
+    </main>
+
+    <aside class="sessions">
+      <h2>Sessioni attive</h2>
+      <div id="session-list"><p class="muted">Nessun dispositivo avviato.</p></div>
+      <h2>Screenshot</h2>
+      <div id="shots" class="shots"><p class="muted">Ancora nessuno.</p></div>
+    </aside>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
